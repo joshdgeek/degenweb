@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asset/frog.png" />
+    <title>MoonFrog — The Most Unnecessary Frog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .noise {
+            background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+            background-repeat: repeat;
+            opacity: 0.12;
+        }
+
+        /* Floating memes */
+        .floaty {
+            animation: floaty 6s infinite ease-in-out;
+        }
+
+        @keyframes floaty {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Spin effect */
+        .spin-on-hover:hover {
+            transform: rotate(12deg) scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-[#0a0c11] text-white overflow-x-hidden">
+
+    <!-- NAV -->
+    <nav
+        class="flex justify-between items-center px-6 py-4 md:px-12 sticky top-0 backdrop-blur bg-black/40 border-b border-white/5">
+        <h1 class="text-3xl font-extrabold tracking-tight flex items-center gap-2">
+            🐸 <span class="animate-pulse">MoonFrog</span>
+        </h1>
+        <a href="#buy"
+            class="px-6 py-2 rounded-full bg-green-500 hover:bg-green-600 font-semibold transition shadow-lg shadow-green-500/30">
+            Buy Now
+        </a>
+    </nav>
+
+    <!-- RANDOM FLOATING EMOJIS -->
+    <div class="pointer-events-none select-none fixed top-10 left-10 text-5xl floaty opacity-30">🐸</div>
+    <div class="pointer-events-none select-none fixed bottom-20 right-14 text-6xl floaty opacity-30">🚀</div>
+    <div class="pointer-events-none select-none fixed top-1/2 left-1/3 text-6xl floaty opacity-20">💸</div>
+
+    <!-- HERO -->
+    <!-- HERO -->
+    <section class="relative px-6 md:px-12 pt-20 pb-32 text-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-green-600/30 to-blue-500/20 blur-3xl"></div>
+        <div class="absolute inset-0 noise"></div>
+
+        <!-- NEW SUB-HEADLINE -->
+        <p class="text-lg md:text-xl text-green-300 font-mono mb-4 animate-pulse">
+            🌕 100% Community Driven • 0% Brain Cells Required
+        </p>
+
+        <h2 class="text-6xl md:text-7xl font-extrabold mb-6 leading-tight">
+            The Frog That Said<br>
+            <span class="text-green-400 drop-shadow-lg">"Screw Normal Tokens"</span>
+        </h2>
+
+        <!-- MORE CONTENT -->
+        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
+            This isn’t just a frog.
+            It’s a **financial mistake wrapped in hopium**, decorated with internet energy,
+            and fueled by degen dreams of “just one more 100x.”
+            <br><br>
+            Don’t invest responsibly.
+            **Invest emotionally.**
+        </p>
+
+        <!-- CRAZIER + RESPONSIVE BUTTON -->
+        <a href="#buy" class="relative inline-block px-10 md:px-16 py-4 md:py-5 bg-green-500 hover:bg-green-600 rounded-full 
+        text-xl md:text-2xl font-bold transition-all shadow-xl shadow-green-500/40 spin-on-hover 
+        active:scale-95 hover:scale-105 group">
+
+            <!-- button text -->
+            🚀 SEND THIS FROG TO ORBIT
+
+            <!-- floating sparkles -->
+            <span class="absolute -top-3 -right-3 text-yellow-300 animate-bounce">✨</span>
+            <span class="absolute -bottom-3 -left-4 text-green-200 animate-spin">🌀</span>
+
+            <!-- hover effect -->
+            <span
+                class="absolute inset-0 rounded-full bg-green-400 opacity-0 group-hover:opacity-20 blur-xl transition"></span>
+        </a>
+
+        <!-- NEW EXTRA CONTENT BELOW BUTTON -->
+        <div class="mt-12 max-w-2xl mx-auto text-gray-400 text-lg leading-relaxed">
+            <p>
+                ✔ Audited by “Trust Me Bro Labs”
+                ✔ Backed by zero fundamentals
+                ✔ Rug-proof (because we lost the keys)
+                ✔ Runs entirely on chaos energy
+            </p>
+            <p class="mt-4 italic text-green-300">
+                “If frog moon — life good. If frog doom — frog still cute.” – Ancient Degen Proverb
+            </p>
+        </div>
+
+        <!-- Frog image -->
+        <div class="mt-16">
+            <img src="https://i.pinimg.com/originals/7d/20/29/7d202998852a5416ee54f796a344def4.gif"
+                alt="https://www.pinterest.com/pin/960814901762941296/"
+                class="w-52 md:w-72 mx-auto drop-shadow-[0_0_40px_#22c55e] floaty" />
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="px-6 md:px-20 py-24">
+        <h3 class="text-5xl font-extrabold mb-8 text-center">What Even *Is* MoonFrog?</h3>
+        <p class="max-w-3xl mx-auto text-xl text-gray-300 leading-relaxed text-center">
+            $MFROG is a **community-powered, brain-cell-destroying, hopium-fueled** digital amphibian.
+            No utility. No promises. No utility. No team.
+            <br><br>
+            We didn’t reinvent the wheel.
+            We slapped a frog on the wheel and threw it downhill.
+        </p>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section class="px-6 md:px-20 py-24 bg-[#111319] rounded-3xl mx-6 md:mx-20 shadow-[0_0_40px_#000]">
+        <h3 class="text-5xl font-extrabold mb-14 text-center">Tokenomics (Because You Asked)</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+            <div class="p-8 border border-white/10 rounded-2xl hover:border-green-400/40 transition">
+                <p class="text-4xl font-extrabold text-green-400 mb-3">1B</p>
+                <p class="text-gray-400 text-lg">Total Supply</p>
+            </div>
+
+            <div class="p-8 border border-white/10 rounded-2xl hover:border-green-400/40 transition">
+                <p class="text-4xl font-extrabold text-green-400 mb-3">95%</p>
+                <p class="text-gray-400 text-lg">Liquidity Pool (Locked by hope)</p>
+            </div>
+
+            <div class="p-8 border border-white/10 rounded-2xl hover:border-green-400/40 transition">
+                <p class="text-4xl font-extrabold text-green-400 mb-3">5%</p>
+                <p class="text-gray-400 text-lg">Marketing (Mostly memes)</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRUE DEGEN ROADMAP -->
+    <section class="px-6 md:px-20 py-24">
+        <h3 class="text-5xl font-extrabold mb-14 text-center">Roadmap (We Lied, It's Chaos)</h3>
+
+        <div class="space-y-12 max-w-3xl mx-auto text-lg">
+
+            <div class="flex space-x-4">
+                <div class="w-6 h-6 bg-green-400 rounded-full mt-2"></div>
+                <div>
+                    <h4 class="text-2xl font-bold">Phase 1 — Frog Awakens</h4>
+                    <p class="text-gray-400 mt-2">Launch. Meme. Panic. Repeat.</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-4">
+                <div class="w-6 h-6 bg-green-400 rounded-full mt-2"></div>
+                <div>
+                    <h4 class="text-2xl font-bold">Phase 2 — Degen Migration</h4>
+                    <p class="text-gray-400 mt-2">200 IQ traders find us.
+                        40 IQ traders buy the top.</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-4">
+                <div class="w-6 h-6 bg-green-400 rounded-full mt-2"></div>
+                <div>
+                    <h4 class="text-2xl font-bold">Phase 3 — Frog Cult</h4>
+                    <p class="text-gray-400 mt-2">Either moon, or community becomes a religion.
+                        Both acceptable.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section id="buy"
+        class="px-6 md:px-20 py-24 bg-[#0f1117] text-center rounded-3xl mx-6 md:mx-20 shadow-inner shadow-black/70">
+        <h3 class="text-5xl font-extrabold mb-6">How to Buy This Mistake</h3>
+        <p class="text-gray-400 mb-8 text-lg">Use this contract like the degen you are:</p>
+
+        <p class="text-green-400 font-mono text-lg mb-8 break-all bg-black/20 py-3 px-4 rounded-xl">
+            0xFROGFROGFROGFROGFROGFROGFROGFROGFROGFROG
+        </p>
+
+        <div class="flex justify-center gap-6 flex-wrap">
+            <a class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-md transition shadow-lg">DEX Screener</a>
+            <a class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-md transition shadow-lg">Chart</a>
+            <a class="px-6 py-3 bg-green-500 hover:bg-green-600 rounded-md transition shadow-lg">Telegram</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 mt-10">
+        © 2025 MoonFrog — Powered by Hopium & Poor Decisions.
+    </footer>
+
+</body>
+
+</html>
